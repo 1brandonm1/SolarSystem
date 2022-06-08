@@ -12,6 +12,9 @@ public class GravityAndVelocity : MonoBehaviour
     void Start()
     {
         celestials = GameObject.FindGameObjectsWithTag("Celestial");
+
+        // gives celestials velocity upon first frame update
+        InitialVelocity();
     }
 
     // Update is called once per frame
@@ -46,6 +49,26 @@ public class GravityAndVelocity : MonoBehaviour
                     a.GetComponent<Rigidbody>().AddForce(
                         (b.transform.position - a.transform.position).normalized *
                         (G * (m1 * m2) / (r * r)));
+                }
+            }
+        }
+    }
+
+    // gives celestials initial velocity
+    void InitialVelocity()
+    {
+        foreach(GameObject a in celestials)
+        {
+            foreach(GameObject b in celestials)
+            {
+                if (!a.Equals(b))
+                {
+                    float m2 = b.GetComponent<Rigidbody>().mass;
+                    float r = Vector3.Distance(a.transform.position, b.transform.position);
+                    a.transform.LookAt(b.transform);
+
+                    a.GetComponent<Rigidbody>().velocity += a.transform.right *
+                        Mathf.Sqrt((G * m2) / r);
                 }
             }
         }
