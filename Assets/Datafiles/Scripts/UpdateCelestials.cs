@@ -7,7 +7,7 @@ public class UpdateCelestials : MonoBehaviour
     // actual value is 6.67 * 10^(-11) but want to actually see orbits
     //public const float G = 0.0001f;
     public const float physicsTimeStep = 0.01f;
-    public const float G = 100f;
+    public const float G = 7.836f;
     Celestial[] celestials;
     static UpdateCelestials instance;
 
@@ -18,7 +18,7 @@ public class UpdateCelestials : MonoBehaviour
     }
 
 
-
+    
 
     // for each body in celestials:
     //      calculate its acceleration using its position
