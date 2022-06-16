@@ -349,7 +349,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &27446057
 GameObject:
@@ -671,7 +671,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &100325179
 GameObject:
@@ -899,7 +899,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &335877259
 GameObject:
@@ -1127,7 +1127,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &582549458
 GameObject:
@@ -1256,7 +1256,6 @@ GameObject:
   - component: {fileID: 847420716}
   - component: {fileID: 847420721}
   - component: {fileID: 847420722}
-  - component: {fileID: 847420723}
   m_Layer: 0
   m_Name: Earth
   m_TagString: Untagged
@@ -1354,8 +1353,7 @@ Transform:
   m_LocalPosition: {x: 1471, y: 0, z: 0}
   m_LocalScale: {x: 12.76, y: 12.76, z: 12.76}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1147150410}
+  m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1471,18 +1469,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   initialVelocity: {x: 0, y: 0, z: 30.03}
---- !u!114 &847420723
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 847420715}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5a42893e7fb44554be43df46ac025f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &945195565
 GameObject:
   m_ObjectHideFlags: 0
@@ -1740,7 +1726,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1147150409
 GameObject:
@@ -1756,7 +1742,6 @@ GameObject:
   - component: {fileID: 1147150414}
   - component: {fileID: 1147150413}
   - component: {fileID: 1147150412}
-  - component: {fileID: 1147150418}
   - component: {fileID: 1147150417}
   m_Layer: 0
   m_Name: Moon
@@ -1773,12 +1758,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1147150409}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.630004, y: 0, z: 0}
-  m_LocalScale: {x: 0.2727273, y: 0.2727273, z: 0.2727273}
+  m_LocalPosition: {x: 1474.63, y: 0, z: 0}
+  m_LocalScale: {x: 3.4800005, y: 3.4800005, z: 3.4800005}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 847420720}
-  m_RootOrder: 0
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!96 &1147150412
 TrailRenderer:
@@ -1825,7 +1810,7 @@ TrailRenderer:
   m_Time: 500
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 3
+    widthMultiplier: 1
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -1970,19 +1955,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 021092a2ad1c24f3fad4417aaa9dc045, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initialVelocity: {x: 0, y: 0, z: 3}
---- !u!114 &1147150418
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1147150409}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5a42893e7fb44554be43df46ac025f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  initialVelocity: {x: 0, y: 0, z: 31.077}
 --- !u!1 &1152882083
 GameObject:
   m_ObjectHideFlags: 0
